@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Hero from './components/Hero/Hero'
 import Navbar from './components/Navbar/Navbar'
 import ProjectCard from './components/ProjectCard/ProjectCard'
+import ExperienceCard from './components/ExperienceCard/ExperienceCard'
 import './App.css'
 
 function App() {
@@ -11,6 +12,22 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+
+        <section id="experience" className="experience-section">
+          <h2 className="section-title">Experience</h2>
+
+          <div className="experience-grid">
+            <ExperienceCard
+              role="Software Engineer Intern"
+              company="Tech Company"
+              location="City, Country"
+              startDate="June 2023"
+              endDate="August 2023"
+              description="Worked on developing and optimizing web applications using React and Node.js. Collaborated with cross-functional teams to implement new features and improve user experience."
+              skills={["React", "Node.js", "JavaScript", "Team Collaboration"]}
+            />
+          </div>
+        </section>
 
         <section id="projects" className="projects-section">
           <h2 className="section-title">Featured Projects</h2>

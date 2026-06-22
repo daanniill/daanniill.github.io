@@ -14,6 +14,11 @@ function Navbar() {
             </a>
           </li>
           <li className="navbar-item">
+            <a href="#experience" className="navbar-link">
+              Experience
+            </a>
+          </li>
+          <li className="navbar-item">
             <a href="#projects" className="navbar-link">
               Projects
             </a>

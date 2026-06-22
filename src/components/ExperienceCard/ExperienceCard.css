@@ -1,0 +1,79 @@
+.experience-card {
+  padding: 1.75rem;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-hover);
+}
+
+.experience-role {
+  margin: 0 0 0.35rem;
+
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.experience-company {
+  margin: 0 0 0.3rem;
+
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.experience-dates {
+  margin: 0 0 1rem;
+
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.experience-description {
+  margin: 0 0 1.25rem;
+
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.experience-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.experience-skill {
+  padding: 0.3rem 0.65rem;
+
+  color: var(--text-secondary);
+  background: var(--surface-muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .experience-card {
+    padding: 1.25rem;
+  }
+
+  .experience-role {
+    font-size: 1.2rem;
+  }
+}

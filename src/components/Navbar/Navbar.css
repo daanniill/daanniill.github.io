@@ -76,3 +76,18 @@
   margin-left: auto; /* push menu to the right inside the flex container */
   align-items: center;
 }
+
+@media (max-width: 768px) {
+  .navbar-container {
+    min-width: auto;
+    padding: 1rem;
+  }
+  
+  .navbar-links {
+    gap: 1rem;
+  }
+  
+  .navbar-logo {
+    font-size: 1.25rem;
+  }
+}

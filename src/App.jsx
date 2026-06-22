@@ -25,6 +25,34 @@ function App() {
             />
           </div>
         </section>
+
+        <section id="contact" className="contact-section">
+          <h2>Contact</h2>
+
+          <p>
+            Feel free to reach out for collaborations, questions, or just to say hi! I'm always open to discussing new projects and opportunities.
+          </p>
+
+          <div className="contact-links">
+            <a href="daniil.malakhov12@gmail.com">Email</a>
+
+            <a
+              href="https://github.com/daanniill"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="https://linkedin.com/in/your-profile"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </section>
       </main>
     </>
   )

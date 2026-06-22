@@ -77,3 +77,9 @@ html {
   margin: 0 auto;
   padding: 5rem 0;
 }
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 2rem;
+}

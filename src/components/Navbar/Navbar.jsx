@@ -10,17 +10,12 @@ function Navbar() {
         <ul className="navbar-menu">
           <li className="navbar-item">
             <a href="#home" className="navbar-link">
-              Home
+              About
             </a>
           </li>
           <li className="navbar-item">
             <a href="#projects" className="navbar-link">
               Projects
-            </a>
-          </li>
-          <li className="navbar-item">
-            <a href="#about" className="navbar-link">
-              About
             </a>
           </li>
           <li className="navbar-item">

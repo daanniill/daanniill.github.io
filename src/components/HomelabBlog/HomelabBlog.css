@@ -1,0 +1,183 @@
+.homelab-blog {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 6rem 0;
+}
+
+.blog-section-header {
+  max-width: 700px;
+  margin-bottom: 2.5rem;
+}
+
+.blog-label {
+  margin: 0 0 0.5rem;
+  font-family: monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  color: #676d75;
+}
+
+.blog-section-header h2 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 500;
+}
+
+.blog-introduction {
+  margin-top: 1rem;
+  color: #5d626a;
+  line-height: 1.7;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 260px;
+  padding: 1.5rem;
+  background: rgba(248, 249, 250, 0.82);
+  border: 1px solid #d9dde2;
+  border-radius: 4px;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-3px);
+  border-color: #9ba2aa;
+}
+
+.blog-card-meta {
+  margin-bottom: 1rem;
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: #6a7078;
+}
+
+.blog-card h3 {
+  margin: 0;
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.blog-card > p {
+  flex-grow: 1;
+  margin: 0.75rem 0 1.25rem;
+  color: #555b63;
+  line-height: 1.6;
+}
+
+.blog-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.blog-tag {
+  padding: 0.25rem 0.55rem;
+  font-family: monospace;
+  font-size: 0.7rem;
+  background: #eceff2;
+  border: 1px solid #d8dce1;
+  border-radius: 2px;
+}
+
+.blog-read-button,
+.blog-back-button {
+  width: fit-content;
+  margin-top: 1.25rem;
+  padding: 0;
+  color: inherit;
+  background: none;
+  border: none;
+  border-bottom: 1px solid currentColor;
+  font: inherit;
+  cursor: pointer;
+}
+
+.blog-post {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.blog-post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 2rem 0;
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: #676d75;
+}
+
+.blog-post-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.blog-post-content h1 {
+  margin: 2rem 0 1rem;
+  font-size: clamp(2.25rem, 6vw, 3.75rem);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.blog-post-content h2 {
+  margin-top: 2.75rem;
+  font-weight: 500;
+}
+
+.blog-post-content img {
+  display: block;
+  width: 100%;
+  margin: 2rem 0;
+  border: 1px solid #d9dde2;
+  border-radius: 4px;
+}
+
+.blog-post-content pre {
+  overflow-x: auto;
+  padding: 1rem;
+  background: #eceff2;
+  border: 1px solid #d7dbe0;
+  border-radius: 4px;
+}
+
+.blog-post-content code {
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+.blog-post-content :not(pre) > code {
+  padding: 0.1rem 0.3rem;
+  background: #eceff2;
+  border-radius: 2px;
+}
+
+.blog-post-content blockquote {
+  margin-left: 0;
+  padding-left: 1.25rem;
+  color: #5f656d;
+  border-left: 2px solid #8d949d;
+}
+
+.blog-error {
+  color: #8b3434;
+}
+
+@media (max-width: 600px) {
+  .homelab-blog {
+    padding: 4rem 0;
+  }
+
+  .blog-post-meta {
+    flex-direction: column;
+  }
+}

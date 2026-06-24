@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar'
 import ProjectCard from './components/ProjectCard/ProjectCard'
 import ExperienceCard from './components/ExperienceCard/ExperienceCard'
 import HomelabBlog from './components/HomelabBlog/HomelabBlog'
+import Interests from './components/Interests/Interests'
 import './App.css'
 
 function App() {
@@ -45,6 +46,8 @@ function App() {
         </section>
 
         <HomelabBlog />
+
+        <Interests /> 
 
         <section id="contact" className="contact-section">
           <h2>Contact</h2>

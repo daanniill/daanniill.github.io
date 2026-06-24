@@ -168,9 +168,27 @@
   border-left: 2px solid #8d949d;
 }
 
+.blog-post-content a {
+  color: #3f566b;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid #9aa8b4;
+  transition:
+    color 150ms ease,
+    border-color 150ms ease,
+    background-color 150ms ease;
+}
+
+.blog-post-content a:hover {
+  color: #1f3446;
+  border-color: #1f3446;
+  background-color: rgba(70, 94, 113, 0.08);
+}
+
 .blog-error {
   color: #8b3434;
 }
+
 
 @media (max-width: 600px) {
   .homelab-blog {

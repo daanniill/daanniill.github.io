@@ -3,7 +3,7 @@
 .interests-section {
   width: min(1100px, calc(100% - 2rem));
   margin: 0 auto;
-  padding: 6rem 0;
+  padding: 5rem 0;
 }
 
 .interests-title {
@@ -16,9 +16,9 @@
 
 .interests-description {
   max-width: 850px;
-  margin: 0 0 3rem;
+  margin: 0 0 2.25rem;
   font-size: 1.05rem;
-  line-height: 1.8;
+  line-height: 1.7;
   color: #5b6169;
 }
 
@@ -37,18 +37,33 @@
   border-color: #000000;
 }
 
+.interests-lists-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.interests-list-group {
+  min-width: 0;
+}
+
 .interests-subtitle {
-  margin: 3.5rem 0 1.25rem;
-  padding-bottom: 0.6rem;
-  font-size: 1.5rem;
+  margin: 2.75rem 0 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.3rem;
   font-weight: 500;
   color: #292d33;
   border-bottom: 1px solid #d7dbe0;
 }
 
+.interests-lists-grid .interests-subtitle {
+  margin-top: 0;
+}
+
 .interests-list {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 0;
   margin: 0;
   padding: 0;
@@ -59,26 +74,22 @@
 
 .interests-list-item {
   position: relative;
-  min-height: 72px;
-  padding: 1.3rem 1rem 1.3rem 3.75rem;
+  min-height: 52px;
+  padding: 0.85rem 0.85rem 0.85rem 3rem;
   color: #454b53;
-  line-height: 1.5;
+  font-size: 0.95rem;
+  line-height: 1.35;
   counter-increment: interest-item;
-  border-right: 1px solid #d7dbe0;
   border-bottom: 1px solid #d7dbe0;
   transition:
     background-color 150ms ease,
     transform 150ms ease;
 }
 
-.interests-list-item:nth-child(even) {
-  border-right: none;
-}
-
 .interests-list-item::before {
   position: absolute;
-  top: 1.35rem;
-  left: 1rem;
+  top: 0.9rem;
+  left: 0.85rem;
   content: counter(interest-item, decimal-leading-zero);
   font-family: monospace;
   font-size: 0.75rem;
@@ -123,12 +134,14 @@
     padding: 4rem 0;
   }
 
-  .interests-list {
+  .interests-lists-grid {
     grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
   }
 
-  .interests-list-item {
-    border-right: none;
+  .interests-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .interests-photos {
@@ -152,6 +165,10 @@
   .interests-subtitle {
     margin-top: 2.75rem;
     font-size: 1.3rem;
+  }
+
+  .interests-list {
+    grid-template-columns: 1fr;
   }
 
   .interests-photo {

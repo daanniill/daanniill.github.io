@@ -5,6 +5,9 @@ import ProjectCard from './components/ProjectCard/ProjectCard'
 import ExperienceCard from './components/ExperienceCard/ExperienceCard'
 import HomelabBlog from './components/HomelabBlog/HomelabBlog'
 import Interests from './components/Interests/Interests'
+import experienceData from './data/experience.json'
+import projectsData from './data/projects.json'
+
 import './App.css'
 
 function App() {
@@ -18,17 +21,9 @@ function App() {
         <section id="experience" className="experience-section">
           <h2 className="section-title">Experience</h2>
 
-          <div className="experience-grid">
-            <ExperienceCard
-              role="Software Engineer Intern"
-              company="Tech Company"
-              location="City, Country"
-              startDate="June 2023"
-              endDate="August 2023"
-              description="Worked on developing and optimizing web applications using React and Node.js. Collaborated with cross-functional teams to implement new features and improve user experience."
-              skills={["React", "Node.js", "JavaScript", "Team Collaboration"]}
-            />
-          </div>
+          {experienceData.experience.map((exp) => (
+            <ExperienceCard key={exp.id} {...exp} />
+          ))}
         </section>
 
         <section id="projects" className="projects-section">

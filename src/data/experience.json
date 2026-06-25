@@ -1,0 +1,44 @@
+{
+  "experience": [
+    {
+      "id": "apulza-intern",
+      "role": "Full-Stack Software Engineering Intern",
+      "company": "Apulza",
+      "location": "Remote",
+      "startDate": "June 2026",
+      "endDate": "Present",
+      "description": "Building full-stack tools that support students with ADHD and mental health challenges.",
+      "highlights": [
+        "Developing reusable frontend components",
+        "Integrating frontend interfaces with backend services",
+        "Collaborating with a multidisciplinary product team"
+      ],
+      "skills": [
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "JavaScript"
+      ]
+    },
+    {
+      "id": "acm-dev-intern",
+      "role": "Dev Team Intern",
+      "company": "ACM at UCLA",
+      "location": "Los Angeles, California",
+      "startDate": "October 2025",
+      "endDate": "Present",
+      "description": "Contributed to frontend projects and organization websites using modern web technologies.",
+      "highlights": [
+        "Built components for the Quantum Computing subcommittee website",
+        "Worked with a team using Git and GitHub workflows",
+        "Created and optimized API endpoints for membership-portal, a web application for managing ACM membership."
+      ],
+      "skills": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS"
+      ]
+    }
+  ]
+}

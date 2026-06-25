@@ -1,0 +1,88 @@
+[
+  {
+    "id": "study-searcher",
+    "slug": "study-searcher",
+    "title": "StudySearcher",
+    "subtitle": "Student matching and messaging platform",
+    "summary": "A full-stack application that helps students find study partners based on shared classes and availability.",
+    "description": "StudySearcher allows students to create profiles, add classes, find compatible study partners, and communicate through real-time messaging.",
+    "image": "/images/projects/study-searcher.png",
+    "featured": true,
+    "status": "Completed",
+    "startDate": "May 2026",
+    "endDate": "June 2026",
+    "technologies": [
+      "React",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "WebSockets"
+    ],
+    "highlights": [
+      "Designed a relational PostgreSQL database",
+      "Built real-time private messaging",
+      "Implemented class-based student matching",
+      "Created authentication and protected routes"
+    ],
+    "links": {
+      "github": "https://github.com/joshzaragoza/StudySearcher-",
+      "demo": ""
+    }
+  },
+  {
+    "id": "portfolio",
+    "slug": "portfolio",
+    "title": "Personal Portfolio",
+    "subtitle": "Portfolio and technical blog",
+    "summary": "A responsive personal portfolio built to showcase software projects, experience, and homelab writing.",
+    "description": "A React portfolio with reusable project components, JSON-managed content, and a technical blog.",
+    "image": "/images/projects/portfolio.png",
+    "featured": true,
+    "status": "In Progress",
+    "startDate": "June 2026",
+    "endDate": "Present",
+    "technologies": [
+      "React",
+      "Vite",
+      "CSS",
+      "GitHub Pages"
+    ],
+    "highlights": [
+      "Built reusable project and experience cards",
+      "Created a JSON-based content system",
+      "Configured deployment through GitHub Pages"
+    ],
+    "links": {
+      "github": "https://github.com/daanniill/daanniill.github.io",
+      "demo": "https://daanniill.github.io"
+    }
+  },
+  {
+    "id": "homelab-dashboard",
+    "slug": "homelab-dashboard",
+    "title": "Homelab Dashboard",
+    "subtitle": "Server monitoring and incident dashboard",
+    "summary": "A planned dashboard for monitoring servers, services, resource usage, and system incidents.",
+    "description": "The dashboard will provide a central interface for viewing Proxmox nodes, system metrics, service health, and flight-recorder incident data.",
+    "image": "/images/projects/homelab-dashboard.png",
+    "featured": false,
+    "status": "Planned",
+    "startDate": "June 2026",
+    "endDate": "",
+    "technologies": [
+      "React",
+      "Python",
+      "Docker",
+      "Prometheus"
+    ],
+    "highlights": [
+      "Centralized server monitoring",
+      "Historical incident information",
+      "Service health checks"
+    ],
+    "links": {
+      "github": "",
+      "demo": ""
+    }
+  }
+]

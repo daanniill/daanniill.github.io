@@ -58,7 +58,7 @@ function App() {
             </a>
 
             <a
-              href="https://linkedin.com/in/your-profile"
+              href="https://www.linkedin.com/in/daniil-malakhov-8420a0210/"
               target="_blank"
               rel="noreferrer"
             >

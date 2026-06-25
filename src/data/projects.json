@@ -1,6 +1,28 @@
 {
-
   "projects": [
+    {
+      "title": "FeelWellFurniture",
+      "subtitle": "Furniture e-commerce website",
+      "summary": "A modern responsive e-commerce site for a local furniture business.",
+      "description": "Built a React storefront with product catalog pages, detailed product views, theme support, and polished mobile-friendly interactions.",
+      "image": "/projects/feelwell-furniture.png",
+      "startDate": "2025",
+      "endDate": "",
+      "technologies": [
+        "React",
+        "Tailwind CSS",
+        "Framer Motion"
+      ],
+      "highlights": [
+        "Built responsive product catalog and product detail pages",
+        "Implemented dark and light theme support",
+        "Used Tailwind CSS and Framer Motion for a polished animated UI"
+      ],
+      "links": {
+        "github": "https://github.com/daanniill/feelwellfurniture",
+        "demo": ""
+      }
+    },
     {
       "title": "StudySearcher",
       "subtitle": "Student matching and messaging platform",
@@ -48,27 +70,28 @@
       ],
       "links": {
         "github": "https://github.com/daanniill/daanniill.github.io",
-        "demo": "https://daanniill.github.io"
+        "demo": ""
       }
     },
     {
-      "title": "Homelab Dashboard",
-      "subtitle": "Server monitoring and incident dashboard",
-      "summary": "A planned dashboard for monitoring servers, services, resource usage, and system incidents.",
-      "description": "The dashboard will provide a central interface for viewing Proxmox nodes, system metrics, service health, and flight-recorder incident data.",
+      "title": "Homelab",
+      "subtitle": "Self-hosted server infrastructure",
+      "summary": "A personal homelab for experimenting with servers, virtualization, containers, monitoring, and self-hosted services.",
+      "description": "An ongoing infrastructure project focused on running and maintaining self-hosted services, managing server resources, exploring virtualization, and building practical systems administration experience.",
       "image": "/projects/servers.png",
       "startDate": "June 2026",
       "endDate": "",
       "technologies": [
-        "React",
-        "Python",
+        "Proxmox",
         "Docker",
-        "Prometheus"
+        "Linux",
+        "Prometheus",
+        "Networking"
       ],
       "highlights": [
-        "Centralized server monitoring",
-        "Historical incident information",
-        "Service health checks"
+        "Configured and maintained self-hosted services",
+        "Experimented with virtualization, containers, and server monitoring",
+        "Built hands-on experience with Linux systems and home networking"
       ],
       "links": {
         "github": "",

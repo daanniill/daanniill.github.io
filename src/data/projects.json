@@ -25,24 +25,25 @@
     },
     {
       "title": "StudySearcher",
-      "subtitle": "Student matching and messaging platform",
-      "summary": "A full-stack application that helps students find study partners based on shared classes and availability.",
-      "description": "StudySearcher allows students to create profiles, add classes, find compatible study partners, and communicate through real-time messaging.",
+      "subtitle": "Full-stack study-partner platform",
+      "summary": "Matches students by shared classes, availability, and profile, with authentication and profile management.",
+      "description": "Migrated from MongoDB to a normalized PostgreSQL schema after identifying relational requirements, and added real-time messaging over WebSockets.",
       "image": "/projects/study-searcher.png",
-      "startDate": "May 2026",
-      "endDate": "June 2026",
+      "startDate": "2026",
+      "endDate": "",
       "technologies": [
         "React",
         "Node.js",
         "Express",
         "PostgreSQL",
+        "MongoDB",
         "WebSockets"
       ],
       "highlights": [
-        "Designed a relational PostgreSQL database",
-        "Built real-time private messaging",
-        "Implemented class-based student matching",
-        "Created authentication and protected routes"
+        "Matched students by shared classes, availability, and profile",
+        "Migrated from MongoDB to a normalized PostgreSQL schema after identifying relational requirements",
+        "Added real-time messaging over WebSockets",
+        "Created authentication and profile management"
       ],
       "links": {
         "github": "https://github.com/joshzaragoza/StudySearcher-",
@@ -50,10 +51,58 @@
       }
     },
     {
+      "title": "Portly",
+      "subtitle": "Concurrent TCP port forwarder (Go)",
+      "summary": "A concurrent TCP proxy in Go — a goroutine per connection with bidirectional io.Copy piping so sessions run independently.",
+      "description": "Graceful teardown on abrupt disconnect avoids goroutine leaks; listen/target addresses are configurable via CLI flags.",
+      "image": "",
+      "startDate": "2026",
+      "endDate": "Present",
+      "technologies": [
+        "Go",
+        "TCP/IP",
+        "Linux/Unix"
+      ],
+      "highlights": [
+        "Built a concurrent TCP proxy with a goroutine per connection and bidirectional io.Copy piping",
+        "Implemented graceful teardown on abrupt disconnect to avoid goroutine leaks",
+        "Made listen/target addresses configurable via CLI flags"
+      ],
+      "links": {
+        "github": "https://github.com/daanniill/portly",
+        "demo": ""
+      }
+    },
+    {
+      "title": "autograd_engine",
+      "subtitle": "Scalar automatic-differentiation engine (Python)",
+      "summary": "A scalar-level autograd engine built from scratch, with reverse-mode autodiff over a recorded computation graph.",
+      "description": "A Value type records a computation graph across +, −, ×, ÷, **, tanh, and exp, then runs reverse-mode autodiff by topological sort to populate gradients on every node. Neuron/Layer/MLP classes are layered on top and trained on make_moons with MSE loss and steepest descent, using backtracking line search (Armijo condition) to pick each step size.",
+      "image": "",
+      "startDate": "2025",
+      "endDate": "",
+      "technologies": [
+        "Python",
+        "NumPy",
+        "Matplotlib",
+        "Jupyter Notebook"
+      ],
+      "highlights": [
+        "Built a Value type that records a computation graph across core operations",
+        "Implemented reverse-mode autodiff via topological sort",
+        "Layered Neuron/Layer/MLP classes on top and trained on make_moons",
+        "Used backtracking line search (Armijo condition) for step size selection"
+      ],
+      "links": {
+        "github": "https://github.com/daanniill/autograd_eng",
+        "demo": ""
+      }
+    },
+    {
       "title": "Personal Portfolio",
       "subtitle": "Portfolio and technical blog",
-      "summary": "A responsive personal portfolio built to showcase software projects, experience, and homelab writing.",
-      "description": "A React portfolio with reusable project components, JSON-managed content, and a technical blog.",
+      "summary": "A responsive personal portfolio built to showcase software projects and experience.",
+      "description": "A React portfolio with reusable project and experience components and a JSON-managed content system.",
       "image": "/projects/portfolio.png",
       "startDate": "June 2026",
       "endDate": "Present",
@@ -74,27 +123,28 @@
       }
     },
     {
-      "title": "Homelab",
-      "subtitle": "Self-hosted server infrastructure",
-      "summary": "A personal homelab for experimenting with servers, virtualization, containers, monitoring, and self-hosted services.",
-      "description": "An ongoing infrastructure project focused on running and maintaining self-hosted services, managing server resources, exploring virtualization, and building practical systems administration experience.",
+      "title": "Three-Node Homelab",
+      "subtitle": "Self-hosted systems & infrastructure",
+      "summary": "A three-node Proxmox cluster running Docker Compose services, including a self-hosted Jellyfin server, over LVM.",
+      "description": "Automated administration with Bash on Debian, and configured subnetting, routing, and VPN overlays. Diagnosed an IOMMU-induced read-only-disk failure to device passthrough rather than the disk.",
       "image": "/projects/servers.png",
-      "startDate": "June 2026",
-      "endDate": "",
+      "startDate": "2025",
+      "endDate": "Present",
       "technologies": [
         "Proxmox",
-        "Docker",
-        "Linux",
-        "Prometheus",
-        "Networking"
+        "Docker Compose",
+        "LVM",
+        "Debian/Linux",
+        "Bash"
       ],
       "highlights": [
-        "Configured and maintained self-hosted services",
-        "Experimented with virtualization, containers, and server monitoring",
-        "Built hands-on experience with Linux systems and home networking"
+        "Operated a three-node Proxmox cluster running Docker Compose services, including a self-hosted Jellyfin server, over LVM",
+        "Automated administration with Bash on Debian",
+        "Configured subnetting, routing, and VPN overlays",
+        "Diagnosed an IOMMU-induced read-only-disk failure to device passthrough rather than the disk"
       ],
       "links": {
-        "github": "",
+        "github": "https://github.com/daanniill/homelab-repo",
         "demo": ""
       }
     }

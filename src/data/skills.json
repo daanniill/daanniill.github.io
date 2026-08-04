@@ -1,0 +1,39 @@
+{
+  "skills": [
+    {
+      "category": "Languages",
+      "items": ["Python", "Go", "JavaScript", "TypeScript", "SQL", "Bash"]
+    },
+    {
+      "category": "Concepts",
+      "items": [
+        "Data Structures & Algorithms",
+        "Concurrency",
+        "Networking (TCP/IP)",
+        "REST APIs",
+        "WebSockets",
+        "Machine Learning"
+      ]
+    },
+    {
+      "category": "Frameworks",
+      "items": ["React", "Next.js", "Node.js", "Express", "Flask", "FastAPI", "React Native"]
+    },
+    {
+      "category": "ML / Data",
+      "items": ["NumPy", "Matplotlib"]
+    },
+    {
+      "category": "Infra / Tools",
+      "items": ["PostgreSQL", "MongoDB", "Docker Compose", "Linux/Unix", "Proxmox", "Git"]
+    },
+    {
+      "category": "Certifications",
+      "items": [
+        "Supervised Machine Learning: Regression and Classification (Stanford/DeepLearning.AI)",
+        "Advanced Learning Algorithms (Stanford/DeepLearning.AI)",
+        "CS50x: Introduction to Computer Science (Harvard)"
+      ]
+    }
+  ]
+}

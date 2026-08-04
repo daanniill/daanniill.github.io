@@ -1,0 +1,20 @@
+{
+  "education": [
+    {
+      "id": "ucla",
+      "school": "University of California, Los Angeles",
+      "degree": "B.S. Mathematics of Computation · Minor, Data Science Engineering",
+      "location": "Los Angeles, CA",
+      "startDate": "Sep 2025",
+      "endDate": "Mar 2028",
+      "coursework": [
+        "Data Structures & Algorithms",
+        "Machine Learning (Math 156)",
+        "Data Science (CS M148)",
+        "Software Construction (CS 35L)",
+        "Numerical Methods (Math 151A)",
+        "Linear Algebra (Math 115A)"
+      ]
+    }
+  ]
+}

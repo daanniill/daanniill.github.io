@@ -2,9 +2,13 @@ import Hero from './components/Hero/Hero'
 import Navbar from './components/Navbar/Navbar'
 import ProjectCard from './components/ProjectCard/ProjectCard'
 import ExperienceCard from './components/ExperienceCard/ExperienceCard'
+import Education from './components/Education/Education'
+import Skills from './components/Skills/Skills'
 import Interests from './components/Interests/Interests'
 import experienceData from './data/experience.json'
 import projectsData from './data/projects.json'
+import educationData from './data/education.json'
+import skillsData from './data/skills.json'
 
 import './App.css'
 
@@ -15,6 +19,14 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+
+        <section id="education" className="education-section">
+          <h2 className="section-title">Education</h2>
+
+          {educationData.education.map((edu) => (
+            <Education key={edu.id} {...edu} />
+          ))}
+        </section>
 
         <section id="experience" className="experience-section">
           <h2 className="section-title">Experience</h2>
@@ -33,6 +45,8 @@ function App() {
             ))}
           </div>
         </section>
+
+        <Skills skills={skillsData.skills} />
 
         <Interests />
 

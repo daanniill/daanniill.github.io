@@ -7,17 +7,18 @@
       "location": "Remote",
       "startDate": "June 2026",
       "endDate": "Present",
-      "description": "Building full-stack tools that support students with ADHD and mental health challenges.",
+      "description": "Building a full-stack AI student-support platform serving web and mobile from a single backend.",
       "highlights": [
-        "Developing reusable frontend components",
-        "Integrating frontend interfaces with backend services",
-        "Collaborating with a multidisciplinary product team"
+        "Built a full-stack AI student-support platform (Next.js/TypeScript, FastAPI, PostgreSQL, React Native) serving web and mobile from a single backend",
+        "Integrated the Groq LLaMA-3.3-70B API for personalized study plans, with rule-based fallbacks when the model is slow or unavailable",
+        "Implemented auth and access control: JWT sessions, Google OAuth, role-based permissions, and .edu-verified signup"
       ],
       "skills": [
-        "React",
-        "Node.js",
+        "Next.js",
+        "TypeScript",
+        "FastAPI",
         "PostgreSQL",
-        "JavaScript"
+        "React Native"
       ]
     },
     {
@@ -29,15 +30,16 @@
       "endDate": "Present",
       "description": "Full-Stack-focused developer for ACM at UCLA, supporting web platforms for a community of 3,500+ members.",
       "highlights": [
-        "Build and maintain ACM web platforms with React, Next.js, and TypeScript",
-        "Turn Figma designs into responsive, accessible user interfaces",
-        "Led frontend work for the ACM Quantum Computing Subcommittee page, improving structure, accessibility, and performance"
+        "Build and maintain web platforms in React/Next.js/TypeScript for a 3,500+ member community, turning Figma designs into responsive, accessible UIs",
+        "Led the frontend for the Quantum Computing Subcommittee page, improving structure, accessibility, and performance",
+        "Built REST API endpoints for the membership portal within a Docker-based workflow"
       ],
       "skills": [
         "React",
         "Next.js",
         "TypeScript",
-        "Figma"
+        "Figma",
+        "Docker"
       ]
     }
   ]

@@ -14,6 +14,11 @@ function Navbar() {
             </a>
           </li>
           <li className="navbar-item">
+            <a href="#education" className="navbar-link">
+              Education
+            </a>
+          </li>
+          <li className="navbar-item">
             <a href="#experience" className="navbar-link">
               Experience
             </a>
@@ -21,6 +26,11 @@ function Navbar() {
           <li className="navbar-item">
             <a href="#projects" className="navbar-link">
               Projects
+            </a>
+          </li>
+          <li className="navbar-item">
+            <a href="#skills" className="navbar-link">
+              Skills
             </a>
           </li>
           <li className="navbar-item">

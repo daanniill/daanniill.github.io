@@ -72,6 +72,7 @@ html {
   }
 }
 
+.education-section,
 .experience-section {
   width: min(1100px, calc(100% - 2rem));
   margin: 0 auto;

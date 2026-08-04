@@ -24,11 +24,6 @@ function Navbar() {
             </a>
           </li>
           <li className="navbar-item">
-            <a href="#homelab" className="navbar-link">
-              Homelab
-            </a>
-          </li>
-          <li className="navbar-item">
             <a href="#interests" className="navbar-link">
               Interests
             </a>

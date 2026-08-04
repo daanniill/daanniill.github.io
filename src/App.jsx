@@ -2,7 +2,6 @@ import Hero from './components/Hero/Hero'
 import Navbar from './components/Navbar/Navbar'
 import ProjectCard from './components/ProjectCard/ProjectCard'
 import ExperienceCard from './components/ExperienceCard/ExperienceCard'
-import HomelabBlog from './components/HomelabBlog/HomelabBlog'
 import Interests from './components/Interests/Interests'
 import experienceData from './data/experience.json'
 import projectsData from './data/projects.json'
@@ -35,9 +34,7 @@ function App() {
           </div>
         </section>
 
-        <HomelabBlog />
-
-        <Interests /> 
+        <Interests />
 
         <section id="contact" className="contact-section">
           <h2>Contact</h2>

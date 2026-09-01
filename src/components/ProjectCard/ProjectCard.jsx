@@ -79,7 +79,7 @@ function ProjectCard({
           </div>
         )}
 
-        {(links.github || links.demo) && (
+        {(links.github || links.demo || links.website || links.chromeWebStore) && (
           <div className="project-links">
             {links.github && (
               <a
@@ -102,6 +102,28 @@ function ProjectCard({
                 Live Demo
               </a>
             )}
+
+            {links.website && (
+              <a
+                href={links.website}
+                className="project-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Visit Website
+              </a>
+            )}
+
+            {links.chromeWebStore && (
+              <a
+                href={links.chromeWebStore}
+                className="project-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Chrome Web Store
+              </a>
+            )}
           </div>
         )}
       </div>
@@ -110,4 +132,3 @@ function ProjectCard({
 }
 
 export default ProjectCard;
-

@@ -1,10 +1,59 @@
 {
   "projects": [
     {
+      "title": "LeetRepo",
+      "subtitle": "LeetCode-to-GitHub Chrome extension",
+      "summary": "Archives accepted LeetCode solutions on GitHub and turns them into a study system.",
+      "description": "Captures submissions, organizes code and READMEs, tracks progress, and supports spaced-repetition review.",
+      "image": "/projects/leetrepo.png",
+      "startDate": "2026",
+      "endDate": "Present",
+      "technologies": [
+        "JavaScript",
+        "Chrome Extensions",
+        "Node.js",
+        "PostgreSQL",
+        "GitHub API"
+      ],
+      "highlights": [
+        "Syncs accepted solutions to GitHub automatically",
+        "Organizes problems, metadata, and attempt history",
+        "Offers analytics and optional AI interview notes"
+      ],
+      "links": {
+        "github": "https://github.com/daanniill/LeetRepo",
+        "chromeWebStore": "https://chromewebstore.google.com/detail/leetrepo/donjkojlmjlkdipheppmpblhidlfdeaj"
+      }
+    },
+    {
+      "title": "Apulza AI Website",
+      "subtitle": "Marketing website for an AI student-support startup",
+      "summary": "A responsive marketing site for an AI student-support platform with 1,000+ monthly visitors.",
+      "description": "A React and TypeScript SPA with custom CSS, Cloudflare hosting, and Formspree contact forms.",
+      "image": "/projects/apulza-ai.jpg",
+      "startDate": "June 2026",
+      "endDate": "Present",
+      "technologies": [
+        "React 19",
+        "TypeScript",
+        "Vite 8",
+        "Plain CSS",
+        "Cloudflare Workers"
+      ],
+      "highlights": [
+        "Serves 1,000+ monthly visitors",
+        "Custom responsive UI built without a component library",
+        "Cloudflare deployment with Formspree contact forms"
+      ],
+      "links": {
+        "website": "https://apulza-ai.com/"
+      }
+    },
+    {
       "title": "FeelWellFurniture",
       "subtitle": "Furniture e-commerce website",
-      "summary": "A modern responsive e-commerce site for a local furniture business.",
-      "description": "Built a React storefront with product catalog pages, detailed product views, theme support, and polished mobile-friendly interactions.",
+      "summary": "A responsive e-commerce site for a local furniture business.",
+      "description": "A React storefront with a product catalog, detailed product pages, themes, and responsive interactions.",
       "image": "/projects/feelwell-furniture.png",
       "startDate": "2025",
       "endDate": "",
@@ -14,9 +63,9 @@
         "Framer Motion"
       ],
       "highlights": [
-        "Built responsive product catalog and product detail pages",
-        "Implemented dark and light theme support",
-        "Used Tailwind CSS and Framer Motion for a polished animated UI"
+        "Responsive catalog and product pages",
+        "Dark and light themes",
+        "Animated UI with Tailwind CSS and Framer Motion"
       ],
       "links": {
         "github": "https://github.com/daanniill/feelwellfurniture",
@@ -26,8 +75,8 @@
     {
       "title": "StudySearcher",
       "subtitle": "Full-stack study-partner platform",
-      "summary": "Matches students by shared classes, availability, and profile, with authentication and profile management.",
-      "description": "Migrated from MongoDB to a normalized PostgreSQL schema after identifying relational requirements, and added real-time messaging over WebSockets.",
+      "summary": "Matches students by classes and availability, with profiles and messaging.",
+      "description": "A full-stack app with a PostgreSQL data model, WebSocket chat, and authentication.",
       "image": "/projects/study-searcher.png",
       "startDate": "2026",
       "endDate": "",
@@ -40,10 +89,9 @@
         "WebSockets"
       ],
       "highlights": [
-        "Matched students by shared classes, availability, and profile",
-        "Migrated from MongoDB to a normalized PostgreSQL schema after identifying relational requirements",
-        "Added real-time messaging over WebSockets",
-        "Created authentication and profile management"
+        "Matches students by classes, availability, and profile",
+        "Migrated data from MongoDB to PostgreSQL",
+        "Added WebSocket messaging, authentication, and profiles"
       ],
       "links": {
         "github": "https://github.com/joshzaragoza/StudySearcher-",
@@ -52,9 +100,9 @@
     },
     {
       "title": "Portly",
-      "subtitle": "Concurrent TCP port forwarder (Go)",
-      "summary": "A concurrent TCP proxy in Go — a goroutine per connection with bidirectional io.Copy piping so sessions run independently.",
-      "description": "Graceful teardown on abrupt disconnect avoids goroutine leaks; listen/target addresses are configurable via CLI flags.",
+      "subtitle": "Concurrent TCP proxy in Go",
+      "summary": "A TCP proxy that handles each bidirectional connection independently.",
+      "description": "Handles abrupt disconnects cleanly and supports configurable listen and target addresses.",
       "image": "",
       "startDate": "2026",
       "endDate": "Present",
@@ -64,9 +112,9 @@
         "Linux/Unix"
       ],
       "highlights": [
-        "Built a concurrent TCP proxy with a goroutine per connection and bidirectional io.Copy piping",
-        "Implemented graceful teardown on abrupt disconnect to avoid goroutine leaks",
-        "Made listen/target addresses configurable via CLI flags"
+        "Runs each connection in its own goroutine",
+        "Pipes traffic both ways with io.Copy",
+        "Prevents goroutine leaks during disconnects"
       ],
       "links": {
         "github": "https://github.com/daanniill/portly",
@@ -75,9 +123,9 @@
     },
     {
       "title": "autograd_engine",
-      "subtitle": "Scalar automatic-differentiation engine (Python)",
-      "summary": "A scalar-level autograd engine built from scratch, with reverse-mode autodiff over a recorded computation graph.",
-      "description": "A Value type records a computation graph across +, −, ×, ÷, **, tanh, and exp, then runs reverse-mode autodiff by topological sort to populate gradients on every node. Neuron/Layer/MLP classes are layered on top and trained on make_moons with MSE loss and steepest descent, using backtracking line search (Armijo condition) to pick each step size.",
+      "subtitle": "Automatic differentiation engine in Python",
+      "summary": "A scalar autograd engine with reverse-mode differentiation.",
+      "description": "Records computation graphs, calculates gradients, and trains a small neural network on make_moons.",
       "image": "",
       "startDate": "2025",
       "endDate": "",
@@ -88,10 +136,9 @@
         "Jupyter Notebook"
       ],
       "highlights": [
-        "Built a Value type that records a computation graph across core operations",
-        "Implemented reverse-mode autodiff via topological sort",
-        "Layered Neuron/Layer/MLP classes on top and trained on make_moons",
-        "Used backtracking line search (Armijo condition) for step size selection"
+        "Supports core operations with a custom Value type",
+        "Computes gradients with a topological backward pass",
+        "Trains MLPs using MSE and Armijo line search"
       ],
       "links": {
         "github": "https://github.com/daanniill/autograd_eng",
@@ -101,8 +148,8 @@
     {
       "title": "Personal Portfolio",
       "subtitle": "Portfolio and technical blog",
-      "summary": "A responsive personal portfolio built to showcase software projects and experience.",
-      "description": "A React portfolio with reusable project and experience components and a JSON-managed content system.",
+      "summary": "A responsive portfolio for software projects and experience.",
+      "description": "A React site with reusable components and JSON-managed content.",
       "image": "/projects/portfolio.png",
       "startDate": "June 2026",
       "endDate": "Present",
@@ -113,9 +160,9 @@
         "GitHub Pages"
       ],
       "highlights": [
-        "Built reusable project and experience cards",
-        "Created a JSON-based content system",
-        "Configured deployment through GitHub Pages"
+        "Reusable project and experience cards",
+        "JSON-based content management",
+        "Deployment through GitHub Pages"
       ],
       "links": {
         "github": "https://github.com/daanniill/daanniill.github.io",
@@ -124,9 +171,9 @@
     },
     {
       "title": "Three-Node Homelab",
-      "subtitle": "Self-hosted systems & infrastructure",
-      "summary": "A three-node Proxmox cluster running Docker Compose services, including a self-hosted Jellyfin server, over LVM.",
-      "description": "Automated administration with Bash on Debian, and configured subnetting, routing, and VPN overlays. Diagnosed an IOMMU-induced read-only-disk failure to device passthrough rather than the disk.",
+      "subtitle": "Self-hosted infrastructure",
+      "summary": "A three-node Proxmox cluster hosting Docker services over LVM.",
+      "description": "Managed with Bash on Debian, with custom networking and VPN overlays.",
       "image": "/projects/servers.png",
       "startDate": "2025",
       "endDate": "Present",
@@ -138,10 +185,8 @@
         "Bash"
       ],
       "highlights": [
-        "Operated a three-node Proxmox cluster running Docker Compose services, including a self-hosted Jellyfin server, over LVM",
-        "Automated administration with Bash on Debian",
-        "Configured subnetting, routing, and VPN overlays",
-        "Diagnosed an IOMMU-induced read-only-disk failure to device passthrough rather than the disk"
+        "Runs Docker Compose services, including Jellyfin",
+        "Automates system administration with Bash"
       ],
       "links": {
         "github": "https://github.com/daanniill/homelab-repo",

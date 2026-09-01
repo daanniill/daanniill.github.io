@@ -7,18 +7,22 @@
       "location": "Remote",
       "startDate": "June 2026",
       "endDate": "Present",
-      "description": "Building a full-stack AI student-support platform serving web and mobile from a single backend.",
+      "description": "Developing AI-powered study tools and the production systems that support them across web and mobile.",
       "highlights": [
         "Built a full-stack AI student-support platform (Next.js/TypeScript, FastAPI, PostgreSQL, React Native) serving web and mobile from a single backend",
-        "Integrated the Groq LLaMA-3.3-70B API for personalized study plans, with rule-based fallbacks when the model is slow or unavailable",
-        "Implemented auth and access control: JWT sessions, Google OAuth, role-based permissions, and .edu-verified signup"
+        "Integrated the Groq LLaMA-3.3-70B API to generate personalized study plans across the platform, organizing specialized study sessions around each user's needs, with rule-based fallbacks when the model is unavailable",
+        "Implemented auth and access control: JWT sessions, Google OAuth, role-based permissions, and .edu-verified signup",
+        "Overhauled the company marketing site in React and Tailwind CSS on Cloudflare Pages, with Formspree handling form submissions",
+        "Containerized the stack with Docker Compose for consistent local development and deployment"
       ],
       "skills": [
         "Next.js",
         "TypeScript",
         "FastAPI",
         "PostgreSQL",
-        "React Native"
+        "React Native",
+        "Tailwind CSS",
+        "Docker Compose"
       ]
     },
     {
@@ -28,7 +32,7 @@
       "location": "Los Angeles, CA",
       "startDate": "October 2025",
       "endDate": "Present",
-      "description": "Full-Stack-focused developer for ACM at UCLA, supporting web platforms for a community of 3,500+ members.",
+      "description": "Building accessible web experiences and backend services for a 3,500+ member technical community.",
       "highlights": [
         "Build and maintain web platforms in React/Next.js/TypeScript for a 3,500+ member community, turning Figma designs into responsive, accessible UIs",
         "Led the frontend for the Quantum Computing Subcommittee page, improving structure, accessibility, and performance",
@@ -40,6 +44,25 @@
         "TypeScript",
         "Figma",
         "Docker"
+      ]
+    },
+    {
+      "id": "mathnasium-instructor",
+      "role": "Math Instructor",
+      "company": "Mathnasium - The Math Learning Center",
+      "location": "",
+      "startDate": "November 2023",
+      "endDate": "February 2025",
+      "description": "Led structured, individualized math instruction for K-12 students and a weekly after-school program.",
+      "highlights": [
+        "Led an after-school program, managing 30+ K-5 students weekly and keeping sessions organized, on-pace, and engaging",
+        "Taught K-12 students with Mathnasium's structured curriculum and diagnostic assessments, tailoring instruction to each student's level",
+        "Coached students in problem-solving strategies and mathematical reasoning, and partnered with fellow instructors to sustain an adaptive, positive learning environment"
+      ],
+      "skills": [
+        "Instruction",
+        "Program Leadership",
+        "Problem Solving"
       ]
     }
   ]

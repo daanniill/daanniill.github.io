@@ -1,5 +1,4 @@
 import "./Hero.css";
-import { MathJax } from "better-react-mathjax";
 import profileImage from "../../assets/profile.png";
 // adjust path if Hero.jsx is in a different folder
 
@@ -46,14 +45,6 @@ function Hero() {
             </a>
           </div>
 
-          <p className="hero-equation">
-            Current Favorite Formula: <br />
-            <span className="equation">
-              <MathJax inline>
-                {"\\( f(x) = \\sum_{k=0}^{n} \\frac{f^{(k)}(a)}{k!}(x-a)^k \\)"}
-              </MathJax>
-            </span>
-          </p>
         </div>
 
         <div className="hero-image-wrapper">

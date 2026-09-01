@@ -48,13 +48,6 @@
   flex-wrap: wrap;
 }
 
-.hero-equation {
-  margin-top: 2.25rem;
-  font-family: var(--font-mono);
-  font-size: 0.9rem;
-  color: var(--text-light);
-}
-
 .hero-image-wrapper {
   display: flex;
   justify-content: center;

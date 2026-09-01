@@ -82,11 +82,10 @@ function App() {
                 <span className="eyebrow-text">Contact</span>
               </div>
 
-              <h2 className="contact-heading">Let's build something.</h2>
+              <h2 className="contact-heading">Reach out to me.</h2>
 
               <p className="contact-copy">
-                Open to collaborations, questions, or just saying hi — always
-                happy to talk about new projects and opportunities.
+                Open to collaborations, questions, or just saying hi.
               </p>
             </div>
 

@@ -31,6 +31,12 @@
   transition: transform 250ms ease;
 }
 
+.project-image--contain {
+  object-fit: contain;
+  object-position: center;
+  background: #272138;
+}
+
 .project-card:hover .project-image {
   transform: scale(1.02);
 }

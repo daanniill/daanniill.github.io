@@ -6,6 +6,7 @@ function ProjectCard({
   summary,
   description,
   image,
+  imageFit = "cover",
   startDate,
   endDate,
   technologies = [],
@@ -34,7 +35,9 @@ function ProjectCard({
           <img
             src={image}
             alt={`${title} project preview`}
-            className="project-image"
+            className={`project-image${
+              imageFit === "contain" ? " project-image--contain" : ""
+            }`}
           />
         ) : (
           <span className="project-media-kind">{kind}</span>

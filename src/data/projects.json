@@ -103,7 +103,8 @@
       "kind": "Networking · Go",
       "summary": "A TCP proxy that handles each bidirectional connection independently.",
       "description": "Handles abrupt disconnects cleanly and supports configurable listen and target addresses.",
-      "image": "",
+      "image": "/projects/portly-logo.png",
+      "imageFit": "contain",
       "startDate": "2026",
       "endDate": "Present",
       "technologies": [

@@ -1,0 +1,20 @@
+.section-head {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.section-head-title {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.section-head-rule {
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}

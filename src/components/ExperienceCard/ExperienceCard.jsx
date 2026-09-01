@@ -12,40 +12,42 @@ function ExperienceCard({
 }) {
   return (
     <article className="experience-card">
-      <div className="experience-card-header">
-        <div>
-          <h3 className="experience-role">{role}</h3>
-
-          <p className="experience-company">
-            {company}
-            {location && <span> — {location}</span>}
-          </p>
+      <div className="experience-meta">
+        <div className="experience-dates">
+          {startDate} — {endDate}
         </div>
 
-        <p className="experience-dates">
-          {startDate} – {endDate}
-        </p>
+        <div className="experience-company">{company}</div>
+
+        {location && <div className="experience-location">{location}</div>}
       </div>
 
-      <p className="experience-description">{description}</p>
+      <div className="experience-body">
+        <h3 className="experience-role">{role}</h3>
 
-      {highlights.length > 0 && (
-        <ul className="experience-highlights">
-          {highlights.map((highlight) => (
-            <li key={highlight}>{highlight}</li>
-          ))}
-        </ul>
-      )}
+        <p className="experience-description">{description}</p>
 
-      {skills.length > 0 && (
-        <div className="experience-skills">
-          {skills.map((skill) => (
-            <span key={skill} className="experience-skill">
-              {skill}
-            </span>
-          ))}
-        </div>
-      )}
+        {highlights.length > 0 && (
+          <ul className="experience-highlights">
+            {highlights.map((highlight) => (
+              <li key={highlight}>
+                <span className="experience-highlight-mark">—</span>
+                <span>{highlight}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+
+        {skills.length > 0 && (
+          <div className="experience-skills">
+            {skills.map((skill) => (
+              <span key={skill} className="tag">
+                {skill}
+              </span>
+            ))}
+          </div>
+        )}
+      </div>
     </article>
   );
 }

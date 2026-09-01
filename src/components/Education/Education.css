@@ -1,79 +1,57 @@
 .education-card {
-  padding: 1.75rem;
-  margin: 1.5rem 0;
-
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-card);
-  box-shadow: var(--shadow-card, var(--shadow-soft));
-
-  transition:
-    transform 180ms ease,
-    box-shadow 180ms ease,
-    border-color 180ms ease;
-}
-
-.education-card:hover {
-  transform: translateY(-3px);
-  border-color: var(--border-strong);
-  box-shadow: var(--shadow-hover);
+  background: var(--raise);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  box-shadow: var(--shadow);
+  padding: 28px 30px;
 }
 
 .education-card-header {
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
   justify-content: space-between;
-  gap: 0.5rem;
+  gap: 8px 24px;
 }
 
 .education-school {
-  margin: 0 0 0.35rem;
-
-  color: var(--text-main);
-  font-family: var(--font-main);
-  font-size: 1.4rem;
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 22px;
   font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 .education-degree {
-  margin: 0 0 0.3rem;
-
-  color: var(--text-main);
-  font-size: 0.95rem;
-  font-weight: 600;
+  margin: 8px 0 0;
+  color: var(--ink2);
+  font-size: 16.5px;
 }
 
 .education-dates {
-  margin: 0 0 1rem;
-
-  color: var(--text-muted);
-  font-size: 0.85rem;
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--ink3);
+  white-space: nowrap;
 }
 
 .education-coursework {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.education-course {
-  padding: 0.3rem 0.65rem;
-
-  color: var(--text-muted);
-  background: var(--surface-muted);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-
-  font-size: 0.75rem;
-  font-weight: 500;
+  gap: 8px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
 }
 
 @media (max-width: 640px) {
   .education-card {
-    padding: 1.25rem;
+    padding: 22px 20px;
   }
 
   .education-school {
-    font-size: 1.2rem;
+    font-size: 19px;
   }
 }

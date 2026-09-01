@@ -1,67 +1,124 @@
 import "./Interests.css";
+import SectionHeading from "../SectionHeading/SectionHeading";
+
+const LISTS = [
+  {
+    name: "Favorite games",
+    items: [
+      "The Legend of Zelda: Tears of the Kingdom",
+      "Final Fantasy VII",
+      "The Legend of Zelda: Ocarina of Time",
+      "Monster Hunter World",
+      "Animal Crossing: New Leaf",
+      "Persona 4: Golden",
+      "Horizon Zero Dawn",
+    ],
+  },
+  {
+    name: "Favorite consoles",
+    items: [
+      "New Nintendo 3DS",
+      "PlayStation 5",
+      "PlayStation Portable",
+      "Nintendo Wii",
+      "Nintendo Switch",
+    ],
+  },
+  {
+    name: "Currently playing",
+    items: [
+      "Persona 5 Royal",
+      "Astro Bot",
+      "Monster Hunter Wilds",
+      "Tears of the Kingdom (again lol)",
+      "Final Fantasy IX",
+    ],
+  },
+];
 
 function Interests() {
   return (
-    <section className="interests-section" id="interests">
-      <h2 className="interests-title">Interests</h2>
-      <p className="interests-description">
-        Aside from math and programming, I have a large passion for video games and video game consoles.
-        I have a large collection of primarily Sony PlayStation and Nintendo consoles and games, and I enjoy playing both modern and retro games.
-        I also run a small business with my cousin where we restore and resell retro video game consoles and games. We primarily focus on handhelds such as the PSP and Nintendo 3DS where we have fixed and repaired screens, shells, and more.
-        Check out our ebay shop <a href="https://www.ebay.com/usr/neovintagetech" target="_blank" rel="noreferrer">here</a>!
+    <section id="interests" className="interests-section">
+      <SectionHeading title="Interests" />
+
+      <p className="interests-intro">
+        Aside from math and programming, I have a large passion for video
+        games and video game consoles. I collect primarily Sony PlayStation
+        and Nintendo hardware, and play both modern and retro titles. I also
+        run a small business with my cousin restoring and reselling retro
+        consoles — mostly handhelds like the PSP and Nintendo 3DS, where we
+        repair screens, shells, and more.{" "}
+        <a
+          href="https://www.ebay.com/usr/neovintagetech"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Check out our eBay shop
+        </a>
+        .
       </p>
 
       <div className="interests-lists-grid">
-        <div className="interests-list-group">
-          <h3 className="interests-subtitle">Favorite Games</h3>
-          <ol className="interests-list">
-            <li className="interests-list-item">The Legend of Zelda: Tears of the Kingdom</li>
-            <li className="interests-list-item">Final Fantasy VII</li>
-            <li className="interests-list-item">The Legend of Zelda: Ocarina of Time</li>
-            <li className="interests-list-item">Monster Hunter World</li>
-            <li className="interests-list-item">Animal Crossing: New Leaf</li>
-            <li className="interests-list-item">Persona 4: Golden</li>
-            <li className="interests-list-item">Horizon Zero Dawn</li>
-          </ol>
-        </div>
+        {LISTS.map((col) => (
+          <div key={col.name} className="interests-list-group">
+            <div className="interests-subtitle">{col.name}</div>
 
-        <div className="interests-list-group">
-          <h3 className="interests-subtitle">Favorite Consoles</h3>
-          <ol className="interests-list">
-            <li className="interests-list-item">New Nintendo 3DS</li>
-            <li className="interests-list-item">PlayStation 5</li>
-            <li className="interests-list-item">PlayStation Portable</li>
-            <li className="interests-list-item">Nintendo Wii</li>
-            <li className="interests-list-item">Nintendo Switch</li>
-          </ol>
-        </div>
+            <ol className="interests-list">
+              {col.items.map((item) => (
+                <li key={item} className="interests-list-item">
+                  {item}
+                </li>
+              ))}
+            </ol>
+          </div>
+        ))}
+      </div>
 
-        <div className="interests-list-group">
-          <h3 className="interests-subtitle">Currently Playing</h3>
-          <ol className="interests-list">
-            <li className="interests-list-item">Persona 5 Royal</li>
-            <li className="interests-list-item">Astro Bot</li>
-            <li className="interests-list-item">Monster Hunter Wilds</li>
-            <li className="interests-list-item">The Legend of Zelda: Tears of the Kingdom (again lol)</li>
-            <li className="interests-list-item">Final Fantasy IX</li>
-          </ol>
+      <div className="interests-photos-block">
+        <div className="interests-subtitle">Photos of my collection</div>
+
+        <div className="interests-photos">
+          <img
+            src="/collection_img/collection.jpeg"
+            alt="Console and game collection"
+            className="interests-photo"
+            loading="lazy"
+            decoding="async"
+          />
+          <img
+            src="/collection_img/ds.jpeg"
+            alt="Nintendo DSi and New Nintendo 3DS"
+            className="interests-photo"
+            loading="lazy"
+            decoding="async"
+          />
+          <img
+            src="/collection_img/new_3ds.jpeg"
+            alt="New Nintendo 3DS"
+            className="interests-photo"
+            loading="lazy"
+            decoding="async"
+          />
+          <img
+            src="/collection_img/ps5.jpeg"
+            alt="PlayStation 5"
+            className="interests-photo"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
       </div>
 
-      <h3 className="interests-subtitle">Photos of my Collection</h3>
-      <div className="interests-photos">
-        <img src="/collection_img/collection.jpeg" alt="My Collection" className="interests-photo" />
-        <img src="/collection_img/ds.jpeg" alt="New 3ds and dsi" className="interests-photo" />
-        <img src="/collection_img/new_3ds.jpeg" alt="New 3ds" className="interests-photo" />
-        <img src="/collection_img/ps5.jpeg" alt="PlayStation 5" className="interests-photo" />
+      <div className="interests-other">
+        <div className="interests-other-label">Other interests</div>
+
+        <p className="interests-other-copy">
+          Reading — mostly fantasy and science fiction; currently working
+          through Dune. Exploring new technologies and programming languages.
+          Working out, tennis, and pickleball with friends. And a standing
+          interest in mathematics and its applications to computer science.
+        </p>
       </div>
-
-      <h3 className="interests-subtitle">Other Interests</h3>
-      <p className="interests-description">
-        I also enjoy reading, particularly fantasy and science fiction novels, as well as exploring new technologies and programming languages. Currently, I am reading Dune by Frank Herbert. I also enjoy working out and playing tennis and pickleball with my friends.
-        Additionally, I have a strong interest in mathematics and its applications in computer science and software development.
-      </p>
-
     </section>
   );
 }

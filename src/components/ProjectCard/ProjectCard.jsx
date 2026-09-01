@@ -2,7 +2,7 @@ import "./ProjectCard.css";
 
 function ProjectCard({
   title,
-  subtitle,
+  kind,
   summary,
   description,
   image,
@@ -14,39 +14,43 @@ function ProjectCard({
 }) {
   const dateRange =
     startDate && endDate
-      ? `${startDate} – ${endDate}`
+      ? `${startDate} — ${endDate}`
       : startDate || endDate || "";
+
+  const linkList = [
+    links.github && { label: "GitHub", href: links.github },
+    links.demo && { label: "Live Demo", href: links.demo },
+    links.website && { label: "Visit Website", href: links.website },
+    links.chromeWebStore && {
+      label: "Chrome Web Store",
+      href: links.chromeWebStore,
+    },
+  ].filter(Boolean);
 
   return (
     <article className="project-card">
-      {image && (
-        <div className="project-image-container">
+      <div className="project-media">
+        {image ? (
           <img
             src={image}
             alt={`${title} project preview`}
             className="project-image"
           />
-        </div>
-      )}
+        ) : (
+          <span className="project-media-kind">{kind}</span>
+        )}
+      </div>
 
       <div className="project-content">
         <div className="project-header">
-          <div>
-            <h3 className="project-title">{title}</h3>
+          <h3 className="project-title">{title}</h3>
 
-            {subtitle && (
-              <p className="project-subtitle">{subtitle}</p>
-            )}
-          </div>
-
-          {dateRange && (
-            <p className="project-dates">{dateRange}</p>
-          )}
+          {dateRange && <span className="project-dates">{dateRange}</span>}
         </div>
 
-        {summary && (
-          <p className="project-summary">{summary}</p>
-        )}
+        {kind && <p className="project-kind">{kind}</p>}
+
+        {summary && <p className="project-summary">{summary}</p>}
 
         {description && (
           <p className="project-description">{description}</p>
@@ -55,10 +59,7 @@ function ProjectCard({
         {technologies.length > 0 && (
           <div className="project-technologies">
             {technologies.map((technology) => (
-              <span
-                key={technology}
-                className="project-technology"
-              >
+              <span key={technology} className="tag">
                 {technology}
               </span>
             ))}
@@ -66,64 +67,29 @@ function ProjectCard({
         )}
 
         {highlights.length > 0 && (
-          <div className="project-highlights">
-            <h4 className="project-highlights-title">
-              Highlights
-            </h4>
-
-            <ul className="project-highlights-list">
-              {highlights.map((highlight) => (
-                <li key={highlight}>{highlight}</li>
-              ))}
-            </ul>
-          </div>
+          <ul className="project-highlights">
+            {highlights.map((highlight) => (
+              <li key={highlight}>
+                <span className="project-highlight-mark">▪</span>
+                <span>{highlight}</span>
+              </li>
+            ))}
+          </ul>
         )}
 
-        {(links.github || links.demo || links.website || links.chromeWebStore) && (
+        {linkList.length > 0 && (
           <div className="project-links">
-            {links.github && (
+            {linkList.map((link) => (
               <a
-                href={links.github}
+                key={link.label}
+                href={link.href}
                 className="project-link"
                 target="_blank"
                 rel="noreferrer"
               >
-                GitHub
+                {link.label}
               </a>
-            )}
-
-            {links.demo && (
-              <a
-                href={links.demo}
-                className="project-link"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Live Demo
-              </a>
-            )}
-
-            {links.website && (
-              <a
-                href={links.website}
-                className="project-link"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Visit Website
-              </a>
-            )}
-
-            {links.chromeWebStore && (
-              <a
-                href={links.chromeWebStore}
-                className="project-link"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Chrome Web Store
-              </a>
-            )}
+            ))}
           </div>
         )}
       </div>

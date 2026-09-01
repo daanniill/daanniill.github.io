@@ -20,15 +20,15 @@ function Education({
           </p>
         </div>
 
-        <p className="education-dates">
-          {startDate} – {endDate}
-        </p>
+        <span className="education-dates">
+          {startDate} — {endDate}
+        </span>
       </div>
 
       {coursework.length > 0 && (
         <div className="education-coursework">
           {coursework.map((course) => (
-            <span key={course} className="education-course">
+            <span key={course} className="tag">
               {course}
             </span>
           ))}

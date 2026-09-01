@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "LeetRepo",
-      "subtitle": "LeetCode-to-GitHub Chrome extension",
+      "kind": "Chrome extension",
       "summary": "Archives accepted LeetCode solutions on GitHub and turns them into a study system.",
       "description": "Captures submissions, organizes code and READMEs, tracks progress, and supports spaced-repetition review.",
       "image": "/projects/leetrepo.png",
@@ -27,7 +27,7 @@
     },
     {
       "title": "Apulza AI Website",
-      "subtitle": "Marketing website for an AI student-support startup",
+      "kind": "Marketing site",
       "summary": "A responsive marketing site for an AI student-support platform with 1,000+ monthly visitors.",
       "description": "A React and TypeScript SPA with custom CSS, Cloudflare hosting, and Formspree contact forms.",
       "image": "/projects/apulza-ai.jpg",
@@ -51,7 +51,7 @@
     },
     {
       "title": "FeelWellFurniture",
-      "subtitle": "Furniture e-commerce website",
+      "kind": "E-commerce",
       "summary": "A responsive e-commerce site for a local furniture business.",
       "description": "A React storefront with a product catalog, detailed product pages, themes, and responsive interactions.",
       "image": "/projects/feelwell-furniture.png",
@@ -74,7 +74,7 @@
     },
     {
       "title": "StudySearcher",
-      "subtitle": "Full-stack study-partner platform",
+      "kind": "Full-stack platform",
       "summary": "Matches students by classes and availability, with profiles and messaging.",
       "description": "A full-stack app with a PostgreSQL data model, WebSocket chat, and authentication.",
       "image": "/projects/study-searcher.png",
@@ -100,7 +100,7 @@
     },
     {
       "title": "Portly",
-      "subtitle": "Concurrent TCP proxy in Go",
+      "kind": "Networking · Go",
       "summary": "A TCP proxy that handles each bidirectional connection independently.",
       "description": "Handles abrupt disconnects cleanly and supports configurable listen and target addresses.",
       "image": "",
@@ -123,7 +123,7 @@
     },
     {
       "title": "autograd_engine",
-      "subtitle": "Automatic differentiation engine in Python",
+      "kind": "Machine learning · Python",
       "summary": "A scalar autograd engine with reverse-mode differentiation.",
       "description": "Records computation graphs, calculates gradients, and trains a small neural network on make_moons.",
       "image": "",
@@ -147,7 +147,7 @@
     },
     {
       "title": "Personal Portfolio",
-      "subtitle": "Portfolio and technical blog",
+      "kind": "Portfolio and technical blog",
       "summary": "A responsive portfolio for software projects and experience.",
       "description": "A React site with reusable components and JSON-managed content.",
       "image": "/projects/portfolio.png",
@@ -171,7 +171,7 @@
     },
     {
       "title": "Three-Node Homelab",
-      "subtitle": "Self-hosted infrastructure",
+      "kind": "Self-hosted infrastructure",
       "summary": "A three-node Proxmox cluster hosting Docker services over LVM.",
       "description": "Managed with Bash on Debian, with custom networking and VPN overlays.",
       "image": "/projects/servers.png",

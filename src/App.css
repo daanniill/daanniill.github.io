@@ -32,7 +32,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 56px;
-  align-items: end;
+  align-items: center;
 }
 
 .contact-heading {

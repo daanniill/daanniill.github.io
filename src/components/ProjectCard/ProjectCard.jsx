@@ -7,6 +7,7 @@ function ProjectCard({
   description,
   image,
   imageFit = "cover",
+  imageBackground,
   startDate,
   endDate,
   technologies = [],
@@ -30,7 +31,14 @@ function ProjectCard({
 
   return (
     <article className="project-card">
-      <div className="project-media">
+      <div
+        className="project-media"
+        style={
+          imageBackground
+            ? { "--project-image-background": imageBackground }
+            : undefined
+        }
+      >
         {image ? (
           <img
             src={image}

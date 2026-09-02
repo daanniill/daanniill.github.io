@@ -31,6 +31,8 @@
       "summary": "A responsive marketing site for an AI student-support platform with 1,000+ monthly visitors.",
       "description": "A React and TypeScript SPA with custom CSS, Cloudflare hosting, and Formspree contact forms.",
       "image": "/projects/apulza-ai.jpg",
+      "imageFit": "contain",
+      "imageBackground": "#f5eff3",
       "startDate": "June 2026",
       "endDate": "Present",
       "technologies": [

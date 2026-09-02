@@ -34,7 +34,7 @@
 .project-image--contain {
   object-fit: contain;
   object-position: center;
-  background: #272138;
+  background: var(--project-image-background, #272138);
 }
 
 .project-card:hover .project-image {

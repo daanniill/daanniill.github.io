@@ -124,7 +124,6 @@ function App() {
 
           <div className="site-footer">
             <span>© 2026 Daniil Malakhov</span>
-            <span>Built with React · Vite · GitHub Pages</span>
           </div>
         </section>
       </main>

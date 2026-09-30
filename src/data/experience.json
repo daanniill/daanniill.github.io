@@ -1,6 +1,40 @@
 {
   "experience": [
     {
+      "id": "layup-parts-intern",
+      "role": "Incoming Software Engineering Intern",
+      "company": "Layup Parts",
+      "location": "",
+      "startDate": "Spring 2027",
+      "endDate": "",
+      "description": "Joining the engineering team as a software engineering intern in Spring 2027.",
+      "highlights": [],
+      "skills": []
+    },
+    {
+      "id": "aharoni-lab-ra",
+      "role": "Research Assistant",
+      "company": "Aharoni Lab, UCLA",
+      "location": "Los Angeles, CA",
+      "startDate": "August 2026",
+      "endDate": "Present",
+      "description": "Developing OptiSuite Web, porting the lab's OptiSuite desktop GUI to a web interface for microscope characterization.",
+      "highlights": [
+        "Building OptiSuite Web in Next.js, React, and TypeScript, letting researchers upload resolution target images and receive microscope characterization results in the browser",
+        "Porting the existing Python OptiSuite GUI's analysis pipeline to run behind the web interface",
+        "Working with PyTorch and Ultralytics YOLO models for resolution target detection, exported to ONNX for faster inference"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "Ultralytics YOLO",
+        "ONNX",
+        "Next.js",
+        "React",
+        "TypeScript"
+      ]
+    },
+    {
       "id": "apulza-intern",
       "role": "Full-Stack Software Engineering Intern",
       "company": "Apulza",

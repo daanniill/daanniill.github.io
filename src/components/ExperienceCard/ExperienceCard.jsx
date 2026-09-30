@@ -14,7 +14,7 @@ function ExperienceCard({
     <article className="experience-card">
       <div className="experience-meta">
         <div className="experience-dates">
-          {startDate} — {endDate}
+          {endDate ? `${startDate} — ${endDate}` : startDate}
         </div>
 
         <div className="experience-company">{company}</div>

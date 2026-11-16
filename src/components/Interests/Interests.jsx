@@ -17,6 +17,7 @@ const LISTS = [
   {
     name: "Favorite consoles",
     items: [
+      "PlayStation 1",
       "New Nintendo 3DS",
       "PlayStation 5",
       "PlayStation Portable",
